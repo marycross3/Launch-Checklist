@@ -1,17 +1,17 @@
 // Write your JavaScript code here!
 
-//const { pickPlanet, addDestinationInfo } = require("./scriptHelper");
+// const { pickPlanet, addDestinationInfo } = require("./scriptHelper");
 
-//const { myFetch } = require("./scriptHelper");
+// const { myFetch } = require("./scriptHelper");
 
-//const { formSubmission } = require("./scriptHelper");
+// const { formSubmission } = require("./scriptHelper");
 
 window.addEventListener("load", function() {
-    // let pilotName = document.getElementById("pilotName");
-    // let copilotName = document.getElementById("copilotName");
+
     let form = document.querySelector("form");
     let list = document.getElementById("faultyItems");
-    
+    list.style.visibility = "hidden";
+
 
     let listedPlanets;
     // Set listedPlanetsResponse equal to the value returned by calling myFetch()
