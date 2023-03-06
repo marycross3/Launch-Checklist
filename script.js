@@ -29,8 +29,8 @@ form.addEventListener("submit", function(event) {
     event.preventDefault();
     let pilot = document.querySelector("input[name=pilotName]").value;
     let copilot = document.querySelector("input[name=copilotName]").value;
-    let fuelLevel = document.querySelector("input[name=fuelLevel]").value;
-    let cargoLevel = document.querySelector("input[name=cargoMass]").value;
+    let fuelLevel = Number(document.querySelector("input[name=fuelLevel]").value);
+    let cargoLevel = Number(document.querySelector("input[name=cargoMass]").value);
     formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel);
     
 });
